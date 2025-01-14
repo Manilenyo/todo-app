@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name "viewport" content ="width=device-width", initial-scale="1">
+    <meta name="viewport" content ="width=device-width", initial-scale="1">
     <title>To-Do List </title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,8 +15,9 @@
                     <option value="Urgent">Urgent</option>
                     <option value="Not-Urgent">Not Urgent</option>
                 </select>
-                <button onclick="addTask()">Add</button>
+                <button id="add-button" onclick="addTask()">Add</button>
             </div>
+            <button id="filter-toggle">Hide Complete</button>
             <ul id="list-container">
                <!-- <li class="checked">Task 1</li>
                 <li>Task 1</li>
