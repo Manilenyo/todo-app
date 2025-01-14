@@ -5,7 +5,7 @@ Todo List Languages used (HTML,CSS,Javascript)
 Features : 
   - Add task
   - Task Priority
-  - Delete Icon (Should add a prompt before deleting)
+  - Delete Icon with prompt to deleting 
   - Urgent task always at top
   - Checked task
   - Add date in checked task + hide priority level if checked
@@ -13,11 +13,7 @@ Features :
   - Edit task when clicking in the text
   - if checked can't edit the text
   - saves the data locally
+  - Mobile Version?
+  - Filter for Checked and Unchecked tasks 
 
-Will be added : 
-  - Task due date
-  - Filter for (Checked and Unchecked tasks)
-  - Prompt before deleting
-  - Mobile Version
-
-
+  Project Completed!!!!!
