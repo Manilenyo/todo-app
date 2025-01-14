@@ -1,4 +1,4 @@
-# Todo-app V0.1 (13/01/2025)
+# Todo-app V1.0 (14/01/2025)
 ## https://manilenyo.github.io/todo-app/
 Todo List Languages used (HTML,CSS,Javascript)
 
