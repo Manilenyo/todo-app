@@ -64,8 +64,11 @@ listContainer.addEventListener("click", function (e) {
         saveData();
     }
     else if (e.target.tagName === "IMG" && e.target.alt === "Delete") {
+        const confirmDelete = confirm("Are you sure to delete this task?"); // Prompt to confirm deletion
+        if (confirmDelete) {
         e.target.closest("li").remove(); // Remove the task on delete
         saveData();
+        }
     }
     // Edit task when clicking on task text (only if not checked)
     else if (e.target.classList.contains("task-text")) {
@@ -80,6 +83,25 @@ listContainer.addEventListener("click", function (e) {
         }
     } 
 }, false);
+
+    let hideCompleted =false; // filter state
+
+    document.getElementById("filter-toggle").addEventListener("click", function () {
+        hideCompleted = !hideCompleted; // Toggle the state 
+        this.textContent = hideCompleted ? "Show Completed" : "Hide Completed"; // Update Button Text
+        applyFilter(); // Apply the filter
+    });
+
+    function applyFilter() {
+        const task =listContainer.querySelectorAll("LI")
+        task.forEach(task => {
+            if (hideCompleted && task.classList.contains("checked")) {
+                task.style.display = "none"; // Hide completed task 
+            } else {
+                task.style.display = ""; // show all tasks
+            }
+        });
+    }
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML); // Saves the data locally

@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #9e88a3);
+    background-color: #d66d62;
     padding: 10px;
 }
 .todo-app{
@@ -17,6 +17,7 @@
     margin: 15px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;
+    border-style: solid;
 }
 .todo-app h2{
     color: black;
@@ -39,7 +40,7 @@ input{
     background: transparent;
     padding: 10px;
 }
-button{
+#add-button {
     border: none;
     outline: none; 
     padding: 14px 30px;
@@ -48,6 +49,9 @@ button{
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+#add-button:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.24)
 }
 ul li {
     list-style: none;
@@ -128,4 +132,8 @@ img[alt="Delete"]:hover{
 .completion-date {
     font-style: italic;
     font-size: 12px;
+}
+#filter-toggle {
+    margin-bottom: 10px;
+    width: 100%;
 }
